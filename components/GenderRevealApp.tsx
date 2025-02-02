@@ -22,8 +22,7 @@ const GenderRevealApp: React.FC = () => {
   });
   const [isRevealed, setIsRevealed] = useState<boolean>(false);
   const actualGender: 'boy' | 'girl' = 'girl';
-  const revealDate = '2025-02-02T14:50:00';
-
+  const revealDate = '2025-02-02T15:10:00-09:00';
   // Set up real-time Firestore listener
   useEffect(() => {
     const votesRef = ref(database, 'votes');
@@ -324,7 +323,7 @@ const GenderRevealApp: React.FC = () => {
                           <span>
                             {vote.guess === actualGender ? 
                               '✨ Correct! ✨' : 
-                              'Better luck next time!'}
+                              'Better luck next pregnancy!'}
                           </span>
                         </div>
                       </motion.div>
