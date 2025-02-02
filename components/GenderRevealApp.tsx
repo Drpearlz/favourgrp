@@ -21,7 +21,7 @@ const GenderRevealApp: React.FC = () => {
     seconds: 0
   });
   const [isRevealed, setIsRevealed] = useState<boolean>(false);
-  const actualGender: 'boy' | 'girl' = 'girl';
+  const actualGender: 'boy' | 'girl' = 'boy';
   const revealDate = '2025-02-02T15:10:00-08:00';
   // Set up real-time Firestore listener
   useEffect(() => {
